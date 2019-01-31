@@ -9,3 +9,7 @@ TensorFlow repository for PoCs, Courses and Tutorials
 * Folder: [/PythonProgramming.net/DeepLearningBasics/](/PythonProgramming.net/DeepLearningBasics/README.md).
 * Tutorial - Blog: <https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/>
 * Tutorial - YouTube: <https://www.youtube.com/playlist?list=PLQVvvaa0QuDfhTox0AjmQ6tvTgMBZBEXN>
+
+## **TensorFlow Object Detection API**
+
+* PoCs - Folder: /src/pocs/

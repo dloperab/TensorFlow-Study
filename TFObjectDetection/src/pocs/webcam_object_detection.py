@@ -49,16 +49,17 @@ print("**********")
 # Number of classes to detect
 NUM_CLASSES = 90
 
-# Download Model
-print("[INFO] downloading model '{}'...".format(MODEL_NAME))
-opener = urllib.request.URLopener()
-opener.retrieve(DOWNLOAD_BASE_URL, DESTINATION_MODEL_TAR_PATH)
-tar_file = tarfile.open(DESTINATION_MODEL_TAR_PATH)
-for file in tar_file.getmembers():
-    file_name = os.path.basename(file.name)
-    if 'frozen_inference_graph.pb' in file_name:
-        print("[INFO] extracting model '{}'...".format(MODEL_NAME))
-        tar_file.extract(file, PATH_TO_OBJ_DETECTION)
+# Download model if need it
+if not os.path.exists(DESTINATION_MODEL_TAR_PATH):
+    print("[INFO] downloading model '{}'...".format(MODEL_NAME))
+    opener = urllib.request.URLopener()
+    opener.retrieve(DOWNLOAD_BASE_URL, DESTINATION_MODEL_TAR_PATH)
+    tar_file = tarfile.open(DESTINATION_MODEL_TAR_PATH)
+    for file in tar_file.getmembers():
+        file_name = os.path.basename(file.name)
+        if 'frozen_inference_graph.pb' in file_name:
+            print("[INFO] extracting model '{}'...".format(MODEL_NAME))
+            tar_file.extract(file, PATH_TO_OBJ_DETECTION)
 
 # Load a (frozen) Tensorflow model into memory.
 print("[INFO] loading frozen model...")
@@ -115,11 +116,17 @@ with detection_graph.as_default():
                 np.squeeze(classes).astype(np.int32),
                 np.squeeze(scores),
                 category_index,
+                min_score_thresh=.5,
                 use_normalized_coordinates=True,
                 line_thickness=8)
 
             # Display output
             cv2.imshow('object detection', cv2.resize(image_np, (800, 600)))
+
+            # Return found objects
+            print([category_index.get(i) for i in classes[0]])
+            print(boxes.shape)
+            print(num_detections)
 
             if cv2.waitKey(25) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()

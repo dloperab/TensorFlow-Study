@@ -7,5 +7,5 @@
 ## PoCs - TensorFlow Object Detection API
 
 * **PoC - Webcam Object Detection:**
-  * **Folder:** /src/webcam_object_detection/
+  * **Script:** [webcam_object_detection.py](src/pocs/webcam_object_detection.py).
   * **Credits:** [Detect Objects Using Your Webcam](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/camera.html).

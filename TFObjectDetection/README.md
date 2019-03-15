@@ -2,7 +2,7 @@
 
 ## Setup - TensorFlow Object Detection API
 
-* In folder **/setup** you'll find the instructions (tf_object_detection_api_setup_w10.pdf) **[Spanish]** for installing de API in Windows 10.
+* In folder [/setup](setup) you'll find the [instructions](setup/tf_object_detection_api_setup_w10.pdf) **[Spanish]** for installing de API in Windows 10.
 
 ## PoCs - TensorFlow Object Detection API
 

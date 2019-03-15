@@ -106,3 +106,9 @@ venv.bak/
 .vscode/settings.json
 
 /datasets
+
+# TFODAPI
+datasets
+*.record
+pre-trained-model
+training_output

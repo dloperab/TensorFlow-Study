@@ -17,7 +17,3 @@ TensorFlow repository for PoCs, Courses and Tutorials
 ## **TensorFlow Object Counting API**
 
 * [Folder: /TFObjectCounting/README.md](TFObjectCounting/README.md)
-
-## **PacktPub Books/Courses in TensorFlow**
-
-* [Deep Learning with TensorFlow - Second Edition](/PacktPub/DL+TF/README.md)

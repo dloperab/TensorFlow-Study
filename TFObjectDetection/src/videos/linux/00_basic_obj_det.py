@@ -118,5 +118,5 @@ if __name__ == '__main__':
     # Define the video stream
     cap = cv2.VideoCapture("../../data/videos/traffic.mp4")
 
-    # download_model()
+    download_model()
     worker(cap)

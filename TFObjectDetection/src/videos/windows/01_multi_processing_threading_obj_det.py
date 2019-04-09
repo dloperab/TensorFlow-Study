@@ -19,7 +19,7 @@ from object_detection.utils import visualization_utils as vis_util
 
 # What model to download
 # Models can bee found here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-MODEL_NAME = 'ssd_inception_v2_coco_2018_01_28'
+MODEL_NAME = 'faster_rcnn_inception_v2_coco_2018_01_28'
 
 # construct paths
 # base path where we will save our models
@@ -124,10 +124,12 @@ def worker(input_q, output_q):
     sess.close()
 
 if __name__ == '__main__':
+    download_model()
+
     # args
     queue_size = 5 # Size of the queue
     num_workers = 2 # Number of workers
-    input_videos = "../data/videos/traffic.mp4"
+    input_videos = "../../data/videos/traffic.mp4"
     display = 0 # Whether or not frames should be displayed
     output = 1 # Whether or not modified videos shall be writen
 
@@ -145,7 +147,7 @@ if __name__ == '__main__':
     # Define the codec and create VideoWriter object
     if output:
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
-        out = cv2.VideoWriter('../../outputs/video_detection.avi',
+        out = cv2.VideoWriter('../../../outputs/video_detection.avi',
                               fourcc, vs.get(cv2.CAP_PROP_FPS),
                               (int(vs.get(cv2.CAP_PROP_FRAME_WIDTH)),
                                int(vs.get(cv2.CAP_PROP_FRAME_HEIGHT))))

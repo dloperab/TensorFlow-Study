@@ -13,7 +13,7 @@ from object_detection.utils import visualization_utils as vis_util
 
 # What model to download
 # Models can bee found here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-MODEL_NAME = 'ssd_inception_v2_coco_2018_01_28'
+MODEL_NAME = 'faster_rcnn_inception_v2_coco_2018_01_28'
 
 # construct paths
 # base path where we will save our models
@@ -115,7 +115,7 @@ def worker(cap):
 
 if __name__ == '__main__':
     # Define the video stream
-    cap = cv2.VideoCapture("../data/videos/traffic.mp4")
+    cap = cv2.VideoCapture("../../data/videos/traffic.mp4")
 
-    # download_model()
+    download_model()
     worker(cap)

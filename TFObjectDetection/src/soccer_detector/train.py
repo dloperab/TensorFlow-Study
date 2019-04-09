@@ -40,7 +40,7 @@ Example usage:
         --train_config_path=train_config.pbtxt \
         --input_config_path=train_input_config.pbtxt
 
-python train.py --logtostderr --train_dir=training_output --pipeline_config_path=training/ssd_inception_v2_coco.config
+python train.py --logtostderr --train_dir=training_output --pipeline_config_path=training/ssd_mobilenet_v1_coco.config
 """
 import sys
 import os

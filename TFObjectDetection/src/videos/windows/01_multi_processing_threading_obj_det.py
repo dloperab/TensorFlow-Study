@@ -17,9 +17,12 @@ from queue import PriorityQueue
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+
 # What model to download
 # Models can bee found here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-MODEL_NAME = 'faster_rcnn_inception_v2_coco_2018_01_28'
+MODEL_NAME = 'ssd_inception_v2_coco_2018_01_28'
 
 # construct paths
 # base path where we will save our models
@@ -105,7 +108,7 @@ def worker(input_q, output_q):
             od_graph_def.ParseFromString(serialized_graph)
             tf.import_graph_def(od_graph_def, name='')
 
-        sess = tf.Session(graph=detection_graph)
+        sess = tf.Session(config=config, graph=detection_graph)
 
     fps = FPS().start()
     while True:

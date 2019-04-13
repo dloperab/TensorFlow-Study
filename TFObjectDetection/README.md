@@ -8,7 +8,8 @@
 
 * **PoC - Images Object Detection:**
   * **Scripts:**
-    * Image detection - Basic: [00_basic_obj_det.py](src/images/00_basic_obj_det.py).
+    * [Windows] Images detection - Basic: [00_basic_obj_det.py](src/images/windows/00_basic_obj_det.py).
+    * [Linux] Images detection - Basic: [00_basic_obj_det.py](src/images/linux/00_basic_obj_det.py).
 
 * **PoC - Webcam Object Detection:**
   * **Scripts:**
@@ -17,8 +18,11 @@
 
 * **PoC - Video Object Detection:**
   * **Scripts:**
-    * Video detection - Basic: [00_basic_obj_det.py](src/videos/00_basic_obj_det.py).
-    * Video detection - Multi Processing and Threading: [01_multi_processing_threading_obj_det.py](src/videos/01_multi_processing_threading_obj_det.py).
+    * Windows:
+      * Video detection - Basic: [00_basic_obj_det.py](src/videos/windows/00_basic_obj_det.py).
+      * Video detection - Multi Processing and Threading: [01_multi_processing_threading_obj_det.py](src/videos/windows/01_multi_processing_threading_obj_det.py).
+    * Linux:
+      * Video detection - Basic: [00_basic_obj_det.py](src/videos/linux/00_basic_obj_det.py).
   * **Credits:**
     * [Increasing webcam FPS with Python and OpenCV](https://www.pyimagesearch.com/2015/12/21/increasing-webcam-fps-with-python-and-opencv/).
     * [Building a Real-Time Object Recognition App with Tensorflow and OpenCV](https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32).

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>all</folder>
+	<filename>soccer_obj (18).jpg</filename>
+	<path>D:\Dev\Repos\AI\TensorFlow\TFObjectDetection\src\soccer_detector\images\all\soccer_obj (18).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>580</width>
+		<height>773</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>trophy</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>155</xmin>
+			<ymin>486</ymin>
+			<xmax>313</xmax>
+			<ymax>751</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>player</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>37</ymin>
+			<xmax>561</xmax>
+			<ymax>683</ymax>
+		</bndbox>
+	</object>
+</annotation>

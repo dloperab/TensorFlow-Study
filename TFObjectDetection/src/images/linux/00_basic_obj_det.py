@@ -162,13 +162,13 @@ for image_path in TEST_IMAGE_PATHS:
   print(output_dict['num_detections'])
 
   # save image detection
-  cv2.imwrite("../../../outputs/image{}_detection_linux.jpg".format(counter), image_np)
+  cv2.imwrite("../../outputs/image{}_detection_linux.jpg".format(counter), image_np)
 
   counter += 1
 
 # show detected images
 print("[INFO] show detections")
-TEST_OUTPUT_IMAGE_PATHS = [os.path.join("../../../outputs/", 'image{}_detection_linux.jpg'.format(i)) for i in range(1, 3)]
+TEST_OUTPUT_IMAGE_PATHS = [os.path.join("../../outputs/", 'image{}_detection_linux.jpg'.format(i)) for i in range(1, 3)]
 for image_path in TEST_OUTPUT_IMAGE_PATHS:
   print(image_path)
   image = cv2.imread(image_path)

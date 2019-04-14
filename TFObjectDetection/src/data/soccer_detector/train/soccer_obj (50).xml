@@ -1,0 +1,98 @@
+<annotation>
+	<folder>all</folder>
+	<filename>soccer_obj (50).jpg</filename>
+	<path>D:\Dev\Repos\AI\TensorFlow\TFObjectDetection\src\soccer_detector\images\all\soccer_obj (50).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>6000</width>
+		<height>4000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>player</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>925</ymin>
+			<xmax>2209</xmax>
+			<ymax>3150</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>player</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2322</xmin>
+			<ymin>1200</ymin>
+			<xmax>3834</xmax>
+			<ymax>3719</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>soccer ball</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4516</xmin>
+			<ymin>3238</ymin>
+			<xmax>5153</xmax>
+			<ymax>3731</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>soccer cleats</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>247</xmin>
+			<ymin>2431</ymin>
+			<xmax>622</xmax>
+			<ymax>2863</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>soccer cleats</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>753</xmin>
+			<ymin>3169</ymin>
+			<xmax>1441</xmax>
+			<ymax>3550</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>soccer cleats</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1697</xmin>
+			<ymin>3450</ymin>
+			<xmax>2097</xmax>
+			<ymax>3850</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>soccer cleats</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2553</xmin>
+			<ymin>3163</ymin>
+			<xmax>2953</xmax>
+			<ymax>3656</ymax>
+		</bndbox>
+	</object>
+</annotation>

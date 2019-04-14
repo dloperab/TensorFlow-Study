@@ -1,0 +1,26 @@
+<annotation>
+	<folder>all</folder>
+	<filename>soccer_obj (65).jpg</filename>
+	<path>D:\Dev\Repos\AI\TensorFlow\TFObjectDetection\src\soccer_detector\images\all\soccer_obj (65).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5787</width>
+		<height>3858</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>soccer ball</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1284</xmin>
+			<ymin>1346</ymin>
+			<xmax>3378</xmax>
+			<ymax>3199</ymax>
+		</bndbox>
+	</object>
+</annotation>

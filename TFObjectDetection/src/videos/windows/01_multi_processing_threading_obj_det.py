@@ -150,7 +150,7 @@ if __name__ == '__main__':
     # Define the codec and create VideoWriter object
     if output:
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
-        out = cv2.VideoWriter('../../../outputs/video_detection.avi',
+        out = cv2.VideoWriter('../../outputs/traffic_detection_output.avi',
                               fourcc, vs.get(cv2.CAP_PROP_FPS),
                               (int(vs.get(cv2.CAP_PROP_FRAME_WIDTH)),
                                int(vs.get(cv2.CAP_PROP_FRAME_HEIGHT))))

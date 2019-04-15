@@ -27,3 +27,9 @@
     * [Increasing webcam FPS with Python and OpenCV](https://www.pyimagesearch.com/2015/12/21/increasing-webcam-fps-with-python-and-opencv/).
     * [Building a Real-Time Object Recognition App with Tensorflow and OpenCV](https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32).
     * [Real-time and video processing object detection using Tensorflow, OpenCV and Docker](https://towardsdatascience.com/real-time-and-video-processing-object-detection-using-tensorflow-opencv-and-docker-2be1694726e5).
+
+* **PoCs - Custom Datasets:**
+  * **Raccoon Detector:**
+    * [Readme](src/raccoon_detector/README.md).
+    * **Credits:**
+      * []().

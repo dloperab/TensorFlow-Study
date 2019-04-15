@@ -108,7 +108,7 @@ venv.bak/
 /datasets
 
 # TFODAPI
-datasets
-*.record
 pre-trained-model
 training_output
+TFObjectDetection/src/outputs/supercars_traffic_output.avi
+TFObjectDetection/src/data/videos/supercars_traffic.mp4

@@ -29,7 +29,4 @@
     * [Real-time and video processing object detection using Tensorflow, OpenCV and Docker](https://towardsdatascience.com/real-time-and-video-processing-object-detection-using-tensorflow-opencv-and-docker-2be1694726e5).
 
 * **PoCs - Custom Datasets:**
-  * **Raccoon Detector:**
-    * [Readme](src/raccoon_detector/README.md).
-    * **Credits:**
-      * []().
+  * [Raccoon Detector](src/raccoon_detector/README.md).
